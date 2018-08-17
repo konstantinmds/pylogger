@@ -48,14 +48,6 @@ class CreatingEvent(Observer):
         self._observer_state = arg
         return self._observer_state
 
-def main():
-    subject = Event()
-    concretes = CreatingEvent()
-    subject.add(concretes)
-    subject._subject_state = 1234
-    concretes.newmessage('mii')
-
-
 
 
 if __name__ == "__main__":
